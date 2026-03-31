@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pritiswony Mohapatra | Portfolio</title>
+  <title>Pritiswony Mohapatra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
@@ -13,43 +13,75 @@
 <!-- HERO -->
 <section class="hero">
   <h1>Pritiswony Mohapatra</h1>
-  <p>Aspiring Data Analyst</p>
+  <p class="subtitle">Aspiring Data Analyst</p>
   <p class="tagline">Turning data into meaningful insights</p>
 
-  <button onclick="scrollToProjects()">View Projects</button>
-  <button onclick="showExperience()">Experience</button>
-  <button onclick="scrollToCertificates()">Certificates</button>
+  <div class="buttons">
+    <button onclick="scrollToProjects()">Projects</button>
+    <button onclick="scrollToCertificates()">Certificates</button>
+    <button onclick="scrollToEducation()">Education</button>
+    <button onclick="showExperience()">Experience</button>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <h2>Education</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>B.Tech (CSE)</h3>
+      <p>Siksha O Anusandhan University (ITER)</p>
+      <p>2021 – 2025</p>
+      <p><strong>CGPA: 7.42</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Class XII (CBSE)</h3>
+      <p>YPPS School, Bhubaneswar</p>
+      <p>2019 – 2021</p>
+      <p><strong>68.2%</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Class X (CBSE)</h3>
+      <p>BJEM School 2, Satyabhamapur</p>
+      <p>2018 – 2019</p>
+      <p><strong>65%</strong></p>
+    </div>
+
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Quantium Project</h3>
-    <p>Analyzed 200K+ transactions and performed trial vs control analysis.</p>
-    <a href="#" target="_blank">View Report</a>
-  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Quantium</h3>
+      <p>200K+ data analysis & trial vs control insights</p>
+    </div>
 
-  <div class="card">
-    <h3>Deloitte Project</h3>
-    <p>Built Tableau dashboard to analyze machine downtime.</p>
-    <a href="#" target="_blank">View Report</a>
-  </div>
+    <div class="card">
+      <h3>Deloitte</h3>
+      <p>Tableau dashboard & downtime analysis</p>
+    </div>
 
-  <div class="card">
-    <h3>Sales Analysis</h3>
-    <p>Analyzed 1000+ records using Python and created insights.</p>
+    <div class="card">
+      <h3>Sales Analysis</h3>
+      <p>Python-based data insights & visualization</p>
+    </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="section hidden">
   <h2>Experience</h2>
-
   <div class="card">
     <h3>MediaMint</h3>
-    <p>Worked on campaign planning, data analysis, and performance insights.</p>
+    <p>Data analysis, campaign insights & reporting</p>
   </div>
 </section>
 
@@ -57,46 +89,32 @@
 <section id="certificates" class="section">
   <h2>Certificates</h2>
 
-  <div class="card">
-    <h3>Quantium Data Analytics</h3>
-    <a href="https://drive.google.com/file/d/1vu40XFmegL0Lx4D-Uh0pVsNO8xcGkJ55/view?usp=drivesdk" target="_blank">View Certificate</a>
-  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Quantium</h3>
+      <a href="https://drive.google.com/file/d/1vu40XFmegL0Lx4D-Uh0pVsNO8xcGkJ55/view?usp=drivesdk" target="_blank">View</a>
+    </div>
 
-  <div class="card">
-    <h3>Deloitte Data Analytics</h3>
-    <a href="https://drive.google.com/file/d/1uRo9SZ1sKu6hRFTtJSgNJWKhG9sDlSdH/view?usp=drivesdk" target="_blank">View Certificate</a>
-  </div>
+    <div class="card">
+      <h3>Deloitte</h3>
+      <a href="https://drive.google.com/file/d/1uRo9SZ1sKu6hRFTtJSgNJWKhG9sDlSdH/view?usp=drivesdk" target="_blank">View</a>
+    </div>
 
-  <div class="card">
-    <h3>AWS Certification</h3>
-    <a href="https://drive.google.com/file/d/18UB_32PWfKTWSphfNruZoGIj2cll25fr/view?usp=drivesdk" target="_blank">View Certificate</a>
+    <div class="card">
+      <h3>AWS</h3>
+      <a href="https://drive.google.com/file/d/18UB_32PWfKTWSphfNruZoGIj2cll25fr/view?usp=drivesdk" target="_blank">View</a>
+    </div>
   </div>
-</section>
-
-<!-- RESUME -->
-<section class="section">
-  <h2>Resume</h2>
-  <a href="#" class="btn">Download Resume</a>
 </section>
 
 <!-- CONTACT -->
 <section class="section">
   <h2>Contact</h2>
-
-  <p>Email:
-    <a href="mailto:pritiswony.mohapatra@gmail.com">
-      pritiswony.mohapatra@gmail.com
-    </a>
-  </p>
-
-  <p>LinkedIn:
-    <a href="https://linkedin.com/in/pritiswony" target="_blank">
-      linkedin.com/in/pritiswony
-    </a>
-  </p>
+  <p><a href="mailto:pritiswony.mohapatra@gmail.com">Email Me</a></p>
 </section>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+
